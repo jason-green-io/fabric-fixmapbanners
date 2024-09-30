@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "fixmapbanners",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Fix Map Banners",
+  "description": "Fixes MC-144406 Minecraft bug",
   "authors": [
-    "Me!"
+    "Jason Green"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://greener.ca/mod",
+    "sources": "https://github.com/jasongreenio/fixmapbanners"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/fixmapbanners/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "ca.greener.fixmapbanners.FixMapBanners"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "fixmapbanners.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.17",
     "fabric-api": "*",
-    "minecraft": "~1.19.4",
+    "minecraft": "~1.20",
     "java": ">=17"
   },
   "suggests": {
